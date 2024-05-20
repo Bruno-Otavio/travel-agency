@@ -23,6 +23,20 @@ const get = async (req, res) => {
     res.status(202).json(destinos).end();
 }
 
+const create = async (req, res) => {
+    const { nome, valor, data } = req.body;
+
+    const destinos = await prisma.destinos.create({
+        data: {
+            nome,
+            valor,
+            data,
+        }
+    });
+
+    res.status(204).json(destinos).end();
+}
+
 module.exports = {
     getAll,
     get
