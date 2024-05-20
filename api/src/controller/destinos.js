@@ -49,6 +49,8 @@ const update = async (req, res) => {
             data,
         }
     })
+
+    res.status(202).json(destinos).end();
 }
 
 module.exports = {
