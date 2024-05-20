@@ -13,5 +13,9 @@ const verify_connection = (req, res) => {
 router.get("/", verify_connection);
 
 router.get("/destinos", destinos.getAll);
+router.get("/destinos/:id", destinos.get);
+router.post("/destinos", destinos.create);
+router.put("/destinos", destinos.update);
+router.delete("/destinos/:id", destinos.del);
 
 module.exports = router;
