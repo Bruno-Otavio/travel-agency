@@ -15,7 +15,7 @@ router.get("/", verify_connection);
 router.get("/destinos", destinos.getAll);
 router.get("/destinos/:id", destinos.get);
 router.post("/destinos", destinos.create);
-router.put("/destinos", destinos.update);
+router.put("/destinos/:id", destinos.update);
 router.delete("/destinos/:id", destinos.del);
 
 router.get("/pontos", pontos.getAll);
