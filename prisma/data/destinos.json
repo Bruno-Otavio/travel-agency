@@ -1,0 +1,23 @@
+[
+    {
+        "nome": "Pedreira",
+        "valor": 350,
+        "data": "2024-03-12",
+        "pontos": [],
+        "hoteis": []
+    },
+    {
+        "nome": "Campinas",
+        "data": "2024-03-12",
+        "valor": 450,
+        "pontos": [],
+        "hoteis": []
+    },
+    {
+        "nome": "São Paulo",
+        "data": "2024-03-12",
+        "valor": 550,
+        "pontos": [],
+        "hoteis": []
+    }
+]
