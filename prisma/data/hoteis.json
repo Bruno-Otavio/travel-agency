@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Hotel Maravilha",
+        "valor": 500,
+        "avaliacao": "75",
+        "email": "maravilha@email.com",
+        "site": "hotelmaravilha.com.br",
+        "locationId": 1
+    },
+    {
+        "nome": "Hotel Podium",
+        "valor": 150,
+        "avaliacao": "50",
+        "email": "podium@email.com",
+        "site": "hotelpodium.com.br",
+        "locationId": 2
+    },
+    {
+        "nome": "Hotel Resort",
+        "valor": 900,
+        "avaliacao": "85",
+        "email": "resort@email.com",
+        "site": "hotelresort.com.br",
+        "locationId": 3
+    }
+]
