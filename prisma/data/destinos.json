@@ -8,15 +8,15 @@
     },
     {
         "nome": "Campinas",
-        "data": "2024-03-12",
         "valor": 450,
+        "data": "2024-03-12",
         "pontos": [],
         "hoteis": []
     },
     {
         "nome": "São Paulo",
-        "data": "2024-03-12",
         "valor": 550,
+        "data": "2024-03-12",
         "pontos": [],
         "hoteis": []
     }
