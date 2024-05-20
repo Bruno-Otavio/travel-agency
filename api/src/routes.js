@@ -28,6 +28,6 @@ router.get("/hoteis", hoteis.getAll);
 router.get("/hoteis/:id", hoteis.get);
 router.post("/hoteis", hoteis.create);
 router.put("/hoteis/:id", hoteis.update);
-router.delete("/hoteis/:id", hoteis.delete);
+router.delete("/hoteis/:id", hoteis.del);
 
 module.exports = router;
