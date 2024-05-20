@@ -2,9 +2,9 @@ const { PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
 
-const destinosData = JSON.parse(require("./data/destinos.json"));
-const pontosData = JSON.parse(require("./data/pontoData.json"));
-const hoteisData = JSON.parse(require("./data/hoteisData.json"));
+const destinosData = require("./data/destinos.json");
+const pontosData = require("./data/pontos.json");
+const hoteisData = require("./data/hoteis.json");
 
 async function main() {
     console.log("Start Seeding...");
