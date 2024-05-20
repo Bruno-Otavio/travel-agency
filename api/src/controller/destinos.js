@@ -53,6 +53,16 @@ const update = async (req, res) => {
     res.status(202).json(destinos).end();
 }
 
+const del = async (req, res) => {
+    const { id } = req.params;
+
+    const destinos = await prisma.destinos.delete({
+        where: { id }
+    });
+
+    res.status(200).json(destinos).end();
+}
+
 module.exports = {
     getAll,
     get
