@@ -65,5 +65,8 @@ const del = async (req, res) => {
 
 module.exports = {
     getAll,
-    get
+    get,
+    create,
+    update,
+    del
 }
