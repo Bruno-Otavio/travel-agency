@@ -18,4 +18,10 @@ router.post("/destinos", destinos.create);
 router.put("/destinos", destinos.update);
 router.delete("/destinos/:id", destinos.del);
 
+router.get("/pontos", pontos.getAll);
+router.get("/pontos/:id", pontos.get);
+router.post("/pontos", pontos.create);
+router.put("/pontos", pontos.update);
+router.delete("/pontos/:id", pontos.del);
+
 module.exports = router;
