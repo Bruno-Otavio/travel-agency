@@ -3,12 +3,7 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 const getAll = async (req, res) => {
-    const pontos = await prisma.pontos.findMany({
-        include: {
-            pontos: true,
-            hoteis: true,
-        }
-    });
+    const pontos = await prisma.pontos.findMany();
     res.status(202).json(pontos).end();
 }
 
