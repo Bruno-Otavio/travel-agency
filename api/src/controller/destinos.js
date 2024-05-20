@@ -37,6 +37,20 @@ const create = async (req, res) => {
     res.status(204).json(destinos).end();
 }
 
+const update = async (req, res) => {
+    const { id } = req.params;
+    const { nome, valor, data } = req.body;
+
+    const destinos = await prisma.destinos.update({
+        where: { id },
+        data: {
+            nome,
+            valor,
+            data,
+        }
+    })
+}
+
 module.exports = {
     getAll,
     get
