@@ -1,17 +1,14 @@
 [
     {
         "nome": "Pedreira",
-        "valor": 350,
-        "data": "2024-03-12"
+        "valor": 350
     },
     {
         "nome": "Campinas",
-        "valor": 450,
-        "data": "2024-03-12"
+        "valor": 450
     },
     {
         "nome": "São Paulo",
-        "valor": 550,
-        "data": "2024-03-12"
+        "valor": 550
     }
 ]
