@@ -35,10 +35,10 @@ model Pontos {
 }
 
 model Destinos {
-  id     Int     @id @default(autoincrement())
-  nome   String  @db.VarChar(255)
+  id     Int        @id @default(autoincrement())
+  nome   String     @db.VarChar(255)
   valor  Float
-  data   DateTime
+  data   DateTime?  @default(now())
   pontos Pontos[]
   hoteis Hoteis[]
 }
