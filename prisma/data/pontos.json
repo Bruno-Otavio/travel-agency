@@ -1,0 +1,23 @@
+[
+    {
+        "nome": "Limoeira",
+        "endereco": "Rua lala, 99, Jardim Jorge",
+        "telefone": "(19)9287-9499",
+        "valor": 150,
+        "locationId": 1
+    },
+    {
+        "nome": "Reveira",
+        "endereco": "Rua rara, 99, Jardim Rorge",
+        "telefone": "(19)9287-9493",
+        "valor": 250,
+        "locationId": 2
+    },
+    {
+        "nome": "Ciqueira",
+        "endereco": "Rua jaja, 19, Jardim Morge",
+        "telefone": "(19)9287-94j9",
+        "valor": 350,
+        "locationId": 3
+    }
+]
