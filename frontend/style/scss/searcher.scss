@@ -1,0 +1,90 @@
+@import "_colors.scss";
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        font-size: 2rem;
+        color: $color-black;
+
+        span {
+            color: $color-white;
+        }
+    }
+
+    .searcher {
+        background-color: $color-white;
+
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 2.5rem;
+
+        border-radius: 15px;
+
+        .options {
+            display: flex;
+            justify-content: center;
+
+            padding: 1.5rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                justify-content: center;
+                align-items: center;
+
+                margin-right: 2rem;
+
+                cursor: pointer;
+
+                img {
+                    width: 25px;
+                    height: auto;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+
+        .inputs {
+            form {
+                display: flex;
+            }
+
+            div {
+                $input-border-radius: 10px;
+
+                position: relative;
+
+                border: 1px solid $color-black;
+                border-radius: $input-border-radius;
+
+                margin-right: 1rem;
+
+                input {
+                    background-color: $color-white;
+                    
+                    border: none;
+                    border-radius: $input-border-radius;
+ 
+                    padding-top: 1rem;
+                    padding-bottom: 0.5rem; 
+                    padding-left: 0.5rem; 
+                    padding-right: 0.5rem; 
+                }
+
+                label {
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <span class="nav-title">
+                Travel Agency
+            </span>
+            <a class="help" href="#">
+                <img src="./assets/help1-svgrepo-com.svg" alt="help icon">
+                <span>Precisa de Ajuda?</span>
+            </a>
+        </nav>
+        <section class="search-container">
+            <h1 class="title">
+                Preços incríveis só aqui, na <span>&nbsp;Travel Agency</span>
+            </h1>
+           <main class="searcher">
+                <div class="options">
+                    <div>
+                        <img src="./assets/travel-case-svgrepo-com.svg" alt="travel icon">
+                        <span>Pacotes</span>
+                    </div>
+                    <div>
+                        <img src="./assets/airplane-svgrepo-com.svg" alt="travel icon">
+                        <span>Viagens</span>
+                    </div>
+                    <div>
+                        <img src="./assets/bed-svgrepo-com.svg" alt="travel icon">
+                        <span>Hotéis</span>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <form>
+                        <div>
+                            <label class="placeholder">
+                                Origem
+                            </label>
+                            <input type="text" id="origem">
+                        </div>
+                        <div class="date-input">
+                            <input type="date" id="inicio" placeholder="Início">
+                            <input type="date" id="fim" placeholder="Fim">
+                        </div>
+                        <div>
+                            <input type="number" id="viajantes" placeholder="Número de Viajantes">
+                        </div>
+                        <input type="submit" value="Buscar">
+                    </form>
+                </div>
+            </main>
+        </section>
+    </header>
 </body>
 </html>

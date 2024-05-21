@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "_colors.scss";
+@import "nav.scss", "searcher.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "PT Serif", serif;
+}
+
+body {
+    background-color: $color-white;
+}
+
+header {
+    background-color: $color-blue;
+    padding-bottom: 5rem;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}

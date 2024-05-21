@@ -1,3 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #EEF7FF;
+}
+.navbar .nav-title {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.navbar .help {
+  display: flex;
+  text-decoration: none;
+  color: #EEF7FF;
+  font-size: 1.15rem;
+}
+.navbar .help img {
+  width: 1.75rem;
+  height: auto;
+  fill: #EEF7FF;
+  margin-right: 1rem;
+}
 
+.search-container {
+  display: flex;
+  flex-direction: column;
+}
+.search-container .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #041B15;
+}
+.search-container .title span {
+  color: #EEF7FF;
+}
+.search-container .searcher {
+  background-color: #EEF7FF;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: 15px;
+}
+.search-container .searcher .options {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.search-container .searcher .options div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.search-container .searcher .options div img {
+  width: 25px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.search-container .searcher .inputs form {
+  display: flex;
+}
+.search-container .searcher .inputs div {
+  position: relative;
+  border: 1px solid #041B15;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+.search-container .searcher .inputs div input {
+  background-color: #EEF7FF;
+  border: none;
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.search-container .searcher .inputs div label {
+  position: absolute;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Serif", serif;
+}
+
+body {
+  background-color: #EEF7FF;
+}
+
+header {
+  background-color: #4D869C;
+  padding-bottom: 5rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
 
 /*# sourceMappingURL=index.css.map */
