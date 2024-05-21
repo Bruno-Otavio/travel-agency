@@ -9,7 +9,7 @@ const getAll = async (req, res) => {
             hoteis: true,
         }
     });
-    res.status(202).json(destinos).end();
+    res.status(200).json(destinos).end();
 }
 
 const get = async (req, res) => {
@@ -24,7 +24,7 @@ const get = async (req, res) => {
             }
         });
 
-    res.status(202).json(destinos).end();
+    res.status(200).json(destinos).end();
 }
 
 const create = async (req, res) => {
@@ -38,7 +38,7 @@ const create = async (req, res) => {
         }
     });
 
-    res.status(204).json(destinos).end();
+    res.status(201).json(destinos).end();
 }
 
 const update = async (req, res) => {
@@ -64,7 +64,7 @@ const del = async (req, res) => {
         where: { id }
     });
 
-    res.status(200).json(destinos).end();
+    res.status(202).json(destinos).end();
 }
 
 module.exports = {

@@ -15,7 +15,7 @@ const get = async (req, res) => {
             where: { id: Number(id) }
         });
 
-    res.status(202).json(pontos).end();
+    res.status(200).json(pontos).end();
 }
 
 const create = async (req, res) => {
@@ -37,7 +37,7 @@ const create = async (req, res) => {
         }
     });
 
-    res.status(204).json(pontos).end();
+    res.status(201).json(pontos).end();
 }
 
 const update = async (req, res) => {
@@ -71,7 +71,7 @@ const del = async (req, res) => {
         where: { id }
     });
 
-    res.status(200).json(pontos).end();
+    res.status(202).json(pontos).end();
 }
 
 module.exports = {
