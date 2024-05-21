@@ -17,7 +17,11 @@ const get = async (req, res) => {
 
     const destinos = await prisma.destinos
         .findUnique({
-            where: { id: Number(id) }
+            where: { id: Number(id) },
+            include: {
+                pontos: true,
+                hoteis: true,
+            }
         });
 
     res.status(202).json(destinos).end();
