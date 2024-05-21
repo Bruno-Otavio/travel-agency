@@ -46,7 +46,7 @@ const update = async (req, res) => {
     const { nome, valor, data } = req.body;
 
     const destinos = await prisma.destinos.update({
-        where: { id },
+        where: { id: Number(id) },
         data: {
             nome,
             valor,
@@ -61,7 +61,7 @@ const del = async (req, res) => {
     const { id } = req.params;
 
     const destinos = await prisma.destinos.delete({
-        where: { id }
+        where: { id: Number(id) }
     });
 
     res.status(202).json(destinos).end();

@@ -51,7 +51,7 @@ const update = async (req, res) => {
     } = req.body;
 
     const pontos = await prisma.pontos.update({
-        where: { id },
+        where: { id: Number(id) },
         data: {
             nome,
             endereco,
@@ -68,7 +68,7 @@ const del = async (req, res) => {
     const { id } = req.params;
 
     const pontos = await prisma.pontos.delete({
-        where: { id }
+        where: { id: Number(id) }
     });
 
     res.status(202).json(pontos).end();
