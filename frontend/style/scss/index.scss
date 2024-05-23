@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "_colors.scss";
-@import "nav.scss", "searcher.scss";
+@import "nav.scss", "searcher.scss", "card.scss";
 
 * {
     padding: 0;
@@ -25,4 +25,8 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+.hidden {
+    display: none;
 }

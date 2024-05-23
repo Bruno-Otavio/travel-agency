@@ -1,0 +1,22 @@
+@import "_colors.scss";
+
+.card-container {
+    .card {
+        display: flex;
+
+        .location-icon {
+            width: 1.75rem;
+            height: auto;
+        }
+
+        .dropdown,
+        .dropup {
+            width: 2rem;
+            height: auto;
+        }
+
+        .info {
+            display: flex;
+        }
+    }
+}

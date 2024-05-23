@@ -39,10 +39,7 @@
                 <div class="inputs">
                     <form>
                         <div>
-                            <label class="placeholder">
-                                Origem
-                            </label>
-                            <input type="text" id="origem">
+                            <input type="text" id="origem" placeholder="Origem">
                         </div>
                         <div class="date-input">
                             <input type="date" id="inicio" placeholder="Início">
@@ -51,11 +48,27 @@
                         <div>
                             <input type="number" id="viajantes" placeholder="Número de Viajantes">
                         </div>
-                        <input type="submit" value="Buscar">
+                        <button type="submit">Buscar</button>
                     </form>
                 </div>
             </main>
         </section>
     </header>
+    <main class="card-container">
+        <div class="card">
+            <div class="location">
+                <img src="./assets/location-1-svgrepo-com.svg" alt="Location Icon" class="location-icon">
+                <span>Cidade</span>
+            </div>
+            <div class="info">
+                <span class="value">999</span>
+                <span class="data">13/13/13</span>
+                <div class="more">
+                    <img src="./assets/arrow-up-svgrepo-com.svg" alt="dropdown icon" class="dropdown">
+                    <img src="./assets/arrow-up-svgrepo-com.svg" alt="dropup icon" class="dropup hidden">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

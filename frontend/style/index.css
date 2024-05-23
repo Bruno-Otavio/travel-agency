@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: #EEF7FF;
@@ -29,6 +29,7 @@
 .search-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .search-container .title {
   display: flex;
@@ -85,8 +86,21 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.search-container .searcher .inputs div label {
-  position: absolute;
+
+.card-container .card {
+  display: flex;
+}
+.card-container .card .location-icon {
+  width: 1.75rem;
+  height: auto;
+}
+.card-container .card .dropdown,
+.card-container .card .dropup {
+  width: 2rem;
+  height: auto;
+}
+.card-container .card .info {
+  display: flex;
 }
 
 * {
@@ -111,6 +125,10 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */
