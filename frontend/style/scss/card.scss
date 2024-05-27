@@ -1,22 +1,70 @@
 @import "_colors.scss";
 
 .card-container {
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+
     .card {
         display: flex;
+        flex-direction: column;
 
-        .location-icon {
-            width: 1.75rem;
-            height: auto;
+        min-width: 50rem;
+
+        border: 2px solid $color-darkteal;
+        border-radius: 10px;
+
+        box-shadow: 0px 2px 5px $color-darkteal, 0px 0px 2px $color-darkteal inset;
+
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        font-size: large;
+
+        cursor: pointer;
+
+        .card-content {
+            display: flex;
+            justify-content: space-between;
         }
 
-        .dropdown,
-        .dropup {
-            width: 2rem;
-            height: auto;
+        .location {
+            display: flex;
+            align-items: center;
+
+            .location-icon {
+                width: 1.75rem;
+                height: auto;
+                margin-right: 0.75rem;
+            }
         }
 
         .info {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 12.5rem;
+
+            .more {
+                width: 2rem;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                transform: scaleY(-1);
+                transition: transform 150ms ease-in-out;
+            }
+        }
+
+        .card-details {
+            max-height: 0;
+            overflow: hidden;
+            
+            transition: max-height 500ms ease-in-out;
+
+            .point {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }
